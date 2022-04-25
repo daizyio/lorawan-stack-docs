@@ -45,18 +45,6 @@ Most emails contain the name of the network and links to the Identity Server or 
 - `is.email.network.identity-server-url`: The URL of the Identity Server
 - `is.email.network.console-url`: The URL of the Console
 
-Although {{% tts %}} comes with a number of builtin email templates, it is possible to override those with custom templates. You can specify the source where to load templates from, and options for that source. For more information on email templates, see the [email templates reference]({{< ref "/reference/email-templates" >}}).
-
-- `is.email.templates.source`: Source of the email template files (directory, url, blob)
-- `is.email.templates.directory`: Directory on the filesystem where email templates are located
-- `is.email.templates.url`: URL where email templates are located
-- `is.email.templates.blob.bucket`: Bucket where email templates are located
-- `is.email.templates.blob.path`: Path within the bucket.
-
-If your custom templates rely on other files, such as headers or footers, those files need to be included.
-
-- `is.email.templates.includes`: The email templates that will be preloaded on startup
-
 ## OAuth UI Options
 
 The OAuth user interface needs to be configured with at least the canonical URL and the base URL of the Identity Server's HTTP API. The canonical URL needs to be the full URL of the UI, and looks like `https://thethings.example.com/oauth`. The base URL of the Identity Server's HTTP API looks like `https://thethings.example.com/api/v3`.
